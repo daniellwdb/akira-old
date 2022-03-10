@@ -1,0 +1,114 @@
+{
+  "command": {
+    "avatar": {
+      "desc": "Ontvang een avatar URL van getagde user(s), of je eigen avatar",
+      "usage": "<@mention(s)>?",
+      "reply": "Jouw avatar:"
+    },
+    "ping": {
+      "desc": "Check of Akira online is"
+    },
+    "help": {
+      "desc": "Krijg een overzicht van alle commando's of informatie over een specifiek commando",
+      "command_not_found": "Ik kon geen commando vinden met de naam **{{commandName}}**",
+      "title": "Commando's per categorie",
+      "footer_text": "Je kan {{prefix}}help <commando naam> zeggen voor meer informatie over dat commando"
+    },
+    "purge": {
+      "desc": "Verwijder tot 100 berichten tegelijk",
+      "usage": "<aantal>",
+      "not_a_number": "Geef een geldig getal op",
+      "success": "`{{size}}/{{amount}}` bericht(en) zijn verwijderd"
+    },
+    "panda": {
+      "desc": "Ontvang een schattige panda foto of feit! (feiten zijn alleen beschikbaar in het Engels)",
+      "prompt": "Druk op 🐼 voor een schattige panda foto, druk op ❓ voor een willekeurige panda feit"
+    },
+    "suggest": {
+      "desc": "Stuur een feature verzoek in voor Akira",
+      "usage": "<suggestie>",
+      "fail": "Probeer iets specifieker te zijn bij het maken van een suggestie",
+      "success": "Je verzoek is verstuurd naar de maker van de bot, bedankt!"
+    },
+    "setafk": {
+      "desc": "Stel je huidige beschikbaarheid in, als een rol met de naam \"AFK\" gevonden is in de server, wordt deze toegevoegd aan de gebruiker die dit commando gebruikt",
+      "usage": "<status>",
+      "prompt": "Wil je dat ik de reden dat je afk bent laat zien als iemand je mentioned?",
+      "no_response": "setafk commando wordt geannuleerd omdat je te lang hebt gewacht met antwoorden",
+      "no_args": "Geef een reden op waarom je AFK bent",
+      "missing_role_perms": "De AFK rol is gevonden in deze server maar kon niet worden toegevoegd aan / verwijderd van {{user}}",
+      "success": "Je status is ingesteld, gebruik dit commando opnieuw als je terug bent!",
+      "welcome_back": "Welkom terug, {{user}}"
+    },
+    "channelid": {
+      "desc": "Ontvang het kanaal ID van het huidige kanaal of degene die je mentioned (hiermee kan je zorgen dat Akira het kanaal mentioned in join / leave berichten)",
+      "usage": "<#kanaal?>",
+      "success": "Het ID van {{channel}} is `{{id}}`\nGebruik `<#{{id}}>` om te zorgen dat ik dit kanaal mention in een bericht"
+    },
+    "8ball": {
+      "desc": "Laat Akira een poging doen om de toekomst te voorspellen door een vraag te stellen",
+      "usage": "<vraag>",
+      "more_args": "Probeer een iets uitgebreidere vraag te stellen",
+      "provide_question": "Zorg dat je vraag eindigt met een vraagteken",
+      "replies": "Ja,Nee,Ik weet het niet,Misschien,Vraag het later opnieuw"
+    },
+    "poll": {
+      "desc": "Maak een anonieme of publieke poll aan",
+      "usage": "<vraag, antwoorden gescheiden door \", \">",
+      "is_invalid": "Zorg dat je tenminste 1 vraag, 2 antwoorden met een maximaal van 10 antwoorden opgeeft",
+      "prompt": "wil je dat deze poll anoniem blijft?",
+      "no_response": "aamaken van poll word geannuleerd omdat je te lang hebt gewacht met antwoorden",
+      "is_anonymous": "*Deze poll is anoniem, je antwoord word verborgen maar kan elk moment worden gewijzigd*",
+      "votes": "🗳 **Aantal stemmen:** `{{count}}`"
+    },
+    "endpoll": {
+      "desc": "Beëindig een poll (of meerdere) in het huidige kanaal doormiddel van ID(s)",
+      "usage": "<id | id's gescheiden door \", \">>",
+      "no_message": "Ik kon geen poll vinden in dit kanaal met ID: **{{id}}**",
+      "unauthorized": "je kan een poll alleen sluiten als je deze zelf hebt aangemaakt",
+      "results": "\"*{{answer}}*\": {{count}} stem(men)",
+      "closed": "Deze poll is gesloten"
+    },
+    "bday": {
+      "desc": "Sla je verjaardag en tijdzone op",
+      "is_disabled": "De verjaardag feature is uitgeschakeld in deze server, de feature kan worden aangezet via het dashboard",
+      "questions": "geef de tijdzone op waarin je je verjaardag melding wilt ontvangen\nJe kan <https://timezonedb.com/time-zones> bekijken voor een overzicht van tijdzones, bijvoorbeeld: `Europe/Amsterdam`|geef de maand en dag van je verjaardag op, bijvoorbeeld:\n`08-11` (MM-DD)",
+      "cancelled": "verjaardag configuratie word stopgezet omdat je te lang hebt gewacht met antwoorden",
+      "invalid_timezone": "je hebt geen geldige timezone opgegeven, gebruik dit commando opnieuw",
+      "invalid_format": "je hebt de maand en dag van je verjaardag verkeerd opgegeven, gebruik dit commando opnieuw",
+      "updated": "je verjaardag is opgeslagen!, je ontvangt een melding op: `{{date}}`\nGebruik dit commando opnieuw als er iets is fout gegaan"
+    },
+    "roll": {
+      "desc": "Start een interactief dobbel spel!",
+      "busy": "om complete veiligheid te garanderen, kan maximaal 1 persoon tegelijk dit spel spelen, probeer het later opnieuw",
+      "quote": "Van alle gok strategieën, is weten wanneer je moet stoppen mogelijk de beste",
+      "total_phrase": "totaal",
+      "turn_phrase": "deze beurt"
+    }
+  },
+  "guard": {
+    "command_disabled": "Dit commando is uitgeschakeld",
+    "no_args": "Geen waarde(s) opgegeven voor dit commando, gebruik dit commando op de volgende manier:\n`{{prefix}}{{commandName}} {{usage}}`\nTyp `{{prefix}}help {{commandName}}` voor meer informatie over dit commando",
+    "owner_only": "Alleen de maker van Akira kan dit commando gebruiken!",
+    "client_missing_perms": "Ik heb geen rechten voor het volgende: {{perms}}",
+    "member_missing_perms": "Je mist de volgende rechten: {{perms}}"
+  },
+  "interceptor": {
+    "afk": "{{member}} is AFK sinds **{{date}}** met de volgende reden:\n*\"{{status}}\"*",
+    "help": "De prefix in deze server is **{{prefix}}**, je kan `{{prefix}}help` typen voor een lijst met commando's in deze server"
+  },
+  "misc": {
+    "happy_birthday": "🎉 **Gefeliciteerd {{member}}!** 🥳"
+  },
+  "aliases": "Alternatieven",
+  "description": "Beschrijving",
+  "category": "Categorie",
+  "usage": "Gebruik",
+  "examples": "Voorbeelden",
+  "permissions": "Benodigde rechten",
+  "general": "Algemeen",
+  "fun": "Fun",
+  "admin": "Admin",
+  "owner": "Eigenaar",
+  "moderation": "Moderatie"
+}

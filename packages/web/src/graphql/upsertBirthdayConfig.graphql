@@ -1,0 +1,3 @@
+mutation UpsertBirthdayConfig($guildId: String!, $announceChannelId: String) {
+  upsertBirthdayConfig(guildId: $guildId, announceChannelId: $announceChannelId)
+}

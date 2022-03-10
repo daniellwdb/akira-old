@@ -1,0 +1,22 @@
+{
+  "name": "akira",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "common:dev": "yarn workspace @akira/common build:watch",
+    "bot:dev": "yarn workspace @akira/bot dev",
+    "web:dev": "yarn workspace @akira/web start",
+    "common:build": "yarn workspace @akira/common build",
+    "bot:build": "yarn workspace @akira/bot build",
+    "web:build": "yarn workspace @akira/web build",
+    "dev": "concurrently -n w: yarn:*:dev --kill-others-on-fail",
+    "build": "concurrently -n w: yarn:*:build --kill-others-on-fail",
+    "format": "prettier --write packages/**/src/{**,**/**}/*.{js,ts,tsx}"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "prettier": "^2.0.4"
+  }
+}

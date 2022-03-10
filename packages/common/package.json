@@ -1,0 +1,22 @@
+{
+  "name": "@akira/common",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "yarn build --watch"
+  },
+  "author": "Daniell Wijdenbosch",
+  "license": "MIT",
+  "dependencies": {
+    "yup": "^0.28.0"
+  },
+  "devDependencies": {
+    "@types/yup": "^0.26.27",
+    "typescript": "^3.7.4"
+  }
+}

@@ -1,0 +1,3 @@
+mutation ToggleCommand($input: GuildCommandInput!) {
+  toggleCommand(input: $input)
+}

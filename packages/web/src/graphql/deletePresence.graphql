@@ -1,0 +1,3 @@
+mutation DeletePresence($presenceId: String!) {
+  deletePresence(presenceId: $presenceId)
+}

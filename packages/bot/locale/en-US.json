@@ -1,0 +1,114 @@
+{
+  "command": {
+    "avatar": {
+      "desc": "Get the avatar URL of the tagged user(s), or your own avatar",
+      "usage": "<@mention(s)>?",
+      "reply": "Your avatar:"
+    },
+    "ping": {
+      "desc": "Check if Akira is online"
+    },
+    "help": {
+      "desc": "Show all commands or get information about a specific command",
+      "command_not_found": "I could not find a command named **{{commandName}}**",
+      "title": "Commands listed by category",
+      "footer_text": "You can say {{prefix}}help <command name> for more information about that specific command"
+    },
+    "purge": {
+      "desc": "Delete up to 100 messages at a time",
+      "usage": "<amount>",
+      "not_a_number": "Please provide a valid number",
+      "success": "Successfully purged `{{size}}/{{amount}}` message(s)"
+    },
+    "panda": {
+      "desc": "Receive a cute panda image or fact! (facts are only available in English)",
+      "prompt": "Press 🐼 for a cute panda image, press ❓ to get a random panda fact"
+    },
+    "suggest": {
+      "desc": "Request new features for Akira",
+      "usage": "<suggestion>",
+      "fail": "Please try to be more descriptive when providing a suggestion",
+      "success": "Your suggestion has been forwarded to the creator of the bot, thank you!"
+    },
+    "setafk": {
+      "desc": "Toggle your current availability, if a role named \"AFK\" was found in the server, it will be added to the person who uses this command",
+      "usage": "<status>",
+      "prompt": "Do you want me to show the reason you are afk when somebody mentions you?",
+      "no_response": "setafk command will be cancelled because you waited too long",
+      "no_args": "Please provide the reason you are AFK",
+      "missing_role_perms": "The AFK role was found on this server but couldn't be added to / removed from {{user}}",
+      "success": "Your presence has been set to AFK, please reuse this command once you are back!",
+      "welcome_back": "Welcome back, {{user}}"
+    },
+    "channelid": {
+      "desc": "Get the current or mentioned channel's id (used to make Akira mention a channel through join / leave messages)",
+      "usage": "<#channel?>",
+      "success": "The ID of {{channel}} is `{{id}}`\nTo make me mention this channel in a message, use `<#{{id}}>`"
+    },
+    "8ball": {
+      "desc": "Make Akira attempt to predict the future by asking a question",
+      "usage": "<question>",
+      "more_args": "Please try to ask a more descriptive question",
+      "provide_question": "Make sure your question ends with a question mark",
+      "replies": "Yes,No,I don't know,Maybe,Ask again later"
+    },
+    "poll": {
+      "desc": "Create a anonymous or public poll",
+      "usage": "<question, answers split by \", \">",
+      "is_invalid": "Please make sure you provide at least 1 question, 2 answers with a maximum of 10 answers",
+      "prompt": "do you want this poll to be anonymous?",
+      "no_response": "Creation of poll will be cancelled because you waited too long",
+      "is_anonymous": "*This poll is anonymous, your answer will be hidden but can be changed at any time.*",
+      "votes": "🗳 **Vote count:** `{{count}}`"
+    },
+    "endpoll": {
+      "desc": "Ends a poll (or multiple) in the current channel using it's ID(s)",
+      "usage": "<id | id's split by \", \">",
+      "no_message": "I could not find a poll in this channel with id: **{{id}}**",
+      "unauthorized": "you can only close polls you made yourself",
+      "results": "\"*{{answer}}*\": {{count}} vote(s)",
+      "closed": "This poll is closed"
+    },
+    "bday": {
+      "desc": "Save your birthday and timezone",
+      "is_disabled": "The birthday feature has been disabled in this server, this feature can be enabled in the dashboard",
+      "questions": "provide the timezone which your birthday will be announced in\nYou can check <https://timezonedb.com/time-zones> for a list of all valid timezones, for example: `Europe/Amsterdam`|provide your birth month and day, for example:\n`08-11` (MM-DD)",
+      "cancelled": "birthday configuration will be cancelled because you waited too long",
+      "invalid_timezone": "you did not provide a valid timezone, please reuse this command",
+      "invalid_format": "you did not provide your birth month and day in the right format, please reuse this command",
+      "updated": "your birthday was updated successfully!, you will be notified at: `{{date}}`\nPlease reuse this command if something went wrong"
+    },
+    "roll": {
+      "desc": "Start a interactive dice rolling session!",
+      "busy": "to ensure complete safety, only one person is allowed to play at a time, please use this command again soon",
+      "quote": "Of all gambling strategies, knowing when to quit may be the best",
+      "total_phrase": "total",
+      "turn_phrase": "this turn"
+    }
+  },
+  "guard": {
+    "command_disabled": "This command has been disabled",
+    "no_args": "No argument(s) provided for this command, the usage of this command is as follows:\n`{{prefix}}{{commandName}} {{usage}}`\nSay `{{prefix}}help {{commandName}}` for more information about this command",
+    "owner_only": "Only the creator of Akira can use this command!",
+    "client_missing_perms": "I am missing the following permission(s): {{perms}}",
+    "member_missing_perms": "You are missing the following permission(s): {{perms}}"
+  },
+  "interceptor": {
+    "afk": "{{member}} is AFK since **{{date}}** for the following reason:\n*\"{{status}}\"*",
+    "help": "The prefix in this server is **{{prefix}}**, you can say `{{prefix}}help` for a list of commands in this server"
+  },
+  "misc": {
+    "happy_birthday": "🎉 **Happy birthday {{member}}!** 🥳"
+  },
+  "aliases": "Aliases",
+  "description": "Description",
+  "category": "Category",
+  "usage": "Usage",
+  "examples": "Examples",
+  "permissions": "Required permissions",
+  "general": "General",
+  "fun": "Fun",
+  "admin": "Admin",
+  "owner": "Owner",
+  "moderation": "Moderation"
+}

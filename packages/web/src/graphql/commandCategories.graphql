@@ -1,0 +1,15 @@
+query CommandCategories {
+  commandCategories {
+    category
+    commands {
+      name
+      config {
+        aliases
+        description
+        usage
+        examples
+        permissions
+      }
+    }
+  }
+}

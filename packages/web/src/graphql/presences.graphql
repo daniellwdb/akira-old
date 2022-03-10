@@ -1,0 +1,8 @@
+query Presences($guildId: String!) {
+  presences(guildId: $guildId) {
+    id
+    userId
+    status
+    createdDate
+  }
+}

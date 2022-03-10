@@ -1,0 +1,17 @@
+mutation UpdateGuild($input: GuildInput!) {
+  updateGuild(input: $input) {
+    guild {
+      prefix
+      language
+      welcomeMessage
+      welcomeChannelId
+      preferDM
+      leaveMessage
+      leaveChannelId
+    }
+    errors {
+      path
+      message
+    }
+  }
+}

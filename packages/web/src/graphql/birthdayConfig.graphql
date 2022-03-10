@@ -1,0 +1,6 @@
+query BirthdayConfig($guildId: String!) {
+  config(guildId: $guildId) {
+    guildId
+    announceChannelId
+  }
+}

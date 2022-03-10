@@ -1,0 +1,27 @@
+query Guild($guildId: String!) {
+  guild(guildId: $guildId) {
+    prefix
+    language
+    welcomeMessage
+    welcomeChannelId
+    welcomeRoleId
+    preferDM
+    leaveMessage
+    leaveChannelId
+    disabledCommands {
+      name
+    }
+    channels {
+      id
+      name
+    }
+    roles {
+      id
+      name
+    }
+    members {
+      id
+      name
+    }
+  }
+}

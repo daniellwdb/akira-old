@@ -1,0 +1,3 @@
+mutation DeleteBirthdayConfig($guildId: String!) {
+  deleteBirthdayConfig(guildId: $guildId)
+}

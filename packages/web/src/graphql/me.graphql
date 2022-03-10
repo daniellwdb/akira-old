@@ -1,0 +1,15 @@
+query Me {
+  me {
+    avatar
+    discriminator
+    guilds {
+      icon
+      id
+      name
+      owner
+      permissions
+    }
+    id
+    username
+  }
+}
